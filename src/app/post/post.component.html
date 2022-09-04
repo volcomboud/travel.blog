@@ -1,0 +1,12 @@
+<div class="post-card">
+  <h2>{{ post.title }}</h2>
+  <p>Cree le {{ post.createDate }}</p>
+  <img [src]="post.imageUrl" [alt]="title">
+  <p> Description : {{ post.description }}</p>
+  <p>
+    <button (click)="onAddAime()">{{post.aimer ? "<3" : "Aime" }}</button>
+    {{ post.react }} 🥳
+  </p>
+  <p> Commentaire : {{ post.comments }}
+</div>
+
